@@ -1,5 +1,13 @@
-import "@/styles/globals.css";
+import '../styles/globals.css';
+import 'prismjs/themes/prism-tomorrow.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <span className="theme-bejamas" />
+      <Component {...pageProps} />
+    </>
+  );
 }
+
+export default MyApp;
